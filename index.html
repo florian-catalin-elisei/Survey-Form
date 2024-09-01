@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport" />
+    <title>Survey Form</title>
+    <link
+      href="styles.css"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <h1 id="title">Customer Satisfaction Survey</h1>
+    <p id="description">Please fill out the form below to help us improve our services.</p>
+    <form
+      action="#"
+      id="survey-form">
+      <fieldset>
+        <label
+          for="name"
+          id="name-label"
+          >Name:</label
+        >
+        <input
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+          type="text" />
+        <label
+          for="email"
+          id="email-label"
+          >Email:</label
+        >
+        <input
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+          type="email" />
+        <label
+          for="number"
+          id="number-label"
+          >Age:</label
+        >
+        <input
+          id="number"
+          max="99"
+          min="18"
+          name="number"
+          placeholder="Enter your age"
+          type="number" />
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">How did you hear about us?</label>
+        <select
+          id="dropdown"
+          name="dropdown">
+          <option
+            disabled
+            selected
+            value="">
+            Select an option
+          </option>
+          <option value="social-media">Social Media</option>
+          <option value="friend-family">Friend/Family</option>
+          <option value="advertisement">Advertisement</option>
+          <option value="other">Other</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>How would you rate our service?</legend>
+        <input
+          checked
+          id="good"
+          name="rating"
+          type="radio"
+          value="good" />
+        <label
+          class="inline"
+          for="good"
+          >Good</label
+        >
+        <input
+          id="poor"
+          name="rating"
+          type="radio"
+          value="poor" />
+        <label
+          class="inline"
+          for="poor"
+          >Poor</label
+        >
+      </fieldset>
+      <fieldset>
+        <legend>What did you like about our service? (Check all that apply)</legend>
+        <input
+          checked
+          id="quality"
+          name="likes"
+          type="checkbox"
+          value="quality" />
+        <label
+          class="inline"
+          for="quality"
+          >Quality</label
+        >
+        <input
+          id="speed"
+          name="likes"
+          type="checkbox"
+          value="speed" />
+        <label
+          class="inline"
+          for="speed"
+          >Speed</label
+        >
+        <input
+          id="price"
+          name="likes"
+          type="checkbox"
+          value="price" />
+        <label
+          class="inline"
+          for="price"
+          >Price</label
+        >
+        <input
+          id="customer-service"
+          name="likes"
+          type="checkbox"
+          value="customer-service" />
+        <label
+          class="inline"
+          for="customer-service"
+          >Customer Service</label
+        >
+        <input
+          id="other"
+          name="likes"
+          type="checkbox"
+          value="other" />
+        <label
+          class="inline"
+          for="other"
+          >Other</label
+        >
+      </fieldset>
+      <fieldset>
+        <label for="comments">Additional Comments:</label>
+        <textarea
+          cols="30"
+          id="comments"
+          name="comments"
+          placeholder="Share your thoughts"
+          rows="5"></textarea>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
